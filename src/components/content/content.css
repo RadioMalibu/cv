@@ -1,0 +1,355 @@
+.textBlockBorderLeft{
+  border-left: solid 10px #452c46;
+  width:0;
+  height:35%;
+  position: absolute;
+  top:30%;
+  left:30%;
+  overflow:auto;
+  padding-left:25px;
+  color:#fff;
+  cursor: pointer;
+  -webkit-transition:   width 1s 0s, top 3s 1s, left 3s 1s, -webkit-transform 3s 1s, border-left 3s 1s;
+  transition:   width 1s 0s, top 3s 1s, left 3s 1s, transform 3s 1s, border-left 3s 1s;
+  z-index: 30;
+}
+.textBlockBorderLeft p,
+.textBlockBorderLeft h1,
+.textBlockBorderLeft h2{
+  width:40vw;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 2s 1s;
+  transition: opacity 2s 1s;
+}
+.textBlockBorderLeft.openBlock{
+  width:40%;
+  -webkit-transition:   width 1s 3s, top 3s 1s, left 3s 1s, -webkit-transform 3s 1s, border-left 3s 1s;
+  transition:   width 1s 3s, top 3s 1s, left 3s 1s, transform 3s 1s, border-left 3s 1s;
+}
+.textBlockBorderLeft.transitionWork{
+  top:-50px;
+  left:225px;
+  transform:rotate(90deg);
+  -ms-transform:rotate(90deg);
+  -webkit-transform:rotate(90deg);
+  border-left: solid 10px #7e5784;
+}
+.textBlockBorderLeft p.transitionWork,
+.textBlockBorderLeft p.transitionOther,
+.textBlockBorderLeft p.transitionEducation,
+.textBlockBorderLeft p.transitionData,
+.textBlockBorderLeft.transitionWork h1,
+.textBlockBorderLeft.transitionOther h1,
+.textBlockBorderLeft.transitionEducation h1,
+.textBlockBorderLeft.transitionData h1,
+.textBlockBorderLeft.transitionWork h2,
+.textBlockBorderLeft.transitionOther h2,
+.textBlockBorderLeft.transitionEducation h2,
+.textBlockBorderLeft.transitionData h2{
+  opacity: 0;
+}
+.textBlockBorderLeft.transitionEducation{
+  left:100px;
+  border-left: solid 10px #7e5784;
+}
+.textBlockBorderLeft.transitionOther{
+  top:-50px;
+  left:90%;
+  transform:rotate(90deg);
+  -ms-transform:rotate(90deg);
+  -webkit-transform:rotate(90deg);
+  border-left: solid 10px #7e5784;
+}
+.textBlockBorderLeft.transitionData{
+  left:20%;
+  top:70%;
+  transform:rotate(90deg);
+  -ms-transform:rotate(90deg);
+  -webkit-transform:rotate(90deg);
+  border-left: solid 10px #7e5784;
+}
+.workTitle h2{
+  color:#7e5784;
+  position: absolute;
+  top:120px;
+  left:-200px;
+  z-index: 4;
+  -webkit-transition:   left 3s 1s;
+  transition:   left 3s 1s;
+}
+.workTitle.transitionWork h2{
+  left: 10%;
+}
+.educationTitle h2{
+  color:#7e5784;
+  position: absolute;
+  top:60%;
+  z-index: 4;
+  left:-200px;
+  -webkit-transition:   left 3s 1s;
+  transition:   left 3s 1s;
+}
+.educationTitle.transitionEducation h2{
+  left: 120px;
+}
+.otherTitle h2{
+  color:#452c46;
+  position: absolute;
+  top:100%;
+  left:90%;
+  z-index: 4;
+  color:#7e5784;
+  -webkit-transition:   top 3s 1s;
+  transition:   top 3s 1s;
+}
+.otherTitle.transitionOther h2{
+  top:120px;
+}
+.dataTitle h2{
+  color:#7e5784;
+  position: absolute;
+  top:82%;
+  left:100%;
+  z-index: 4;
+  -webkit-transition:   left 3s 1s;
+  transition:   left 3s 1s;
+}
+.dataTitle.transitionData h2{
+  left: 15%;
+}
+.dataContent,
+.educationContent,
+.workContent,
+.otherContent{
+  z-index:6;
+  position: absolute;
+  height:60%;
+  left:10%;
+  top:40%;
+  text-align: center;
+  opacity:0;
+  -webkit-transition:   opacity 3s 4s;
+  transition:   opacity 3s 4s;
+}
+.dataContent,
+.educationContent{
+  width:80%;
+}
+.workContent,
+.otherContent{
+  z-index:11;
+  overflow: hidden;
+}
+.otherContent{
+  left:20%;
+}
+.dataContent.transition,
+.educationContent.transition,
+.workContent.transition,
+.otherContent.transition{
+  opacity: 0;
+  -webkit-transition:   opacity 2s 0s;
+  transition:   opacity 2s 0s;
+  z-index: 6;
+}
+.dataContent.transitionData,
+.educationContent.transitionEducation,
+.workContent.transitionWork,
+.otherContent.transitionOther{
+  opacity: 1;
+}
+.languageBlock{
+  width:150px;
+  height: 300px;
+  display: inline-block;
+  margin:20px;
+}
+.levelHundred{
+  width:0;
+  height:0;
+  border-left: 150px solid transparent;
+  border-bottom: 100px solid #553756;
+  border-right:0px solid transparent;
+  margin-bottom: 20px;
+}
+.level{
+  width:0;
+  height:0;
+  border-right:0px solid transparent;
+  position: relative;
+  left:-150px;
+}
+.educationBlock{
+  width:calc(29% - 100px);
+  padding:0 50px;
+  display: inline-block;
+  vertical-align: top;
+}
+.workBlock,
+.otherBlock{
+  width:300px;
+  margin: 0 50px;
+  display: inline-block;
+  vertical-align: top;
+}
+.backButton{
+  width:20px;
+  height:100%;
+  position:absolute;
+  top:-30%;
+  cursor:pointer;
+  opacity: 1;
+  -webkit-transition:   opacity 2s 1s;
+  transition:   opacity 2s 1s;
+
+}
+.back{
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right:10px solid #94a655;
+  position:absolute;
+  top:30%;
+}
+.nextButton{
+  width:20px;
+  height:100%;
+  position:absolute;
+  top:-30%;
+  right:0;
+  cursor:pointer;
+  opacity: 1;
+  -webkit-transition:   opacity 2s 1s;
+  transition:   opacity 2s 1s;
+}
+.next{
+  border-left: 10px solid #94a655;
+  border-bottom: 10px solid transparent;
+  border-top:10px solid transparent;
+  position: absolute;
+  top:30%;
+  right:0px;
+  z-index:4;
+}
+.fade{
+  opacity: 0.2;
+  cursor: default;
+}
+@media screen and (max-width: 800px){
+  .textBlockBorderLeft{
+    border-top: solid 10px #452c46;
+    border-left: none;
+    width:80%;
+    height:40%;
+    position: absolute;
+    top:20%;
+    left:10%;
+    padding-top:20px;
+    -webkit-transition: border-top 3s 1s;
+    transition: border-top 3s 1s;
+    z-index: 11;
+  }
+  .textBlockBorderLeft p{
+    width:100%;
+  }
+  .textBlockBorderLeft.openBlock{
+    width:80%;
+    -webkit-transition:   none;
+    transition:   none;
+  }
+  .textBlockBorderLeft.transitionWork{
+    top:20%;
+    left:10%;
+    transform:none;
+    -ms-transform:none;
+    -webkit-transform:none;
+    border-top: solid 10px #7e5784;
+    border-left: none;
+  }
+  .textBlockBorderLeft.transitionEducation{
+    left:10%;
+    border-top: solid 10px #7e5784;
+    border-left: none;
+  }
+  .textBlockBorderLeft.transitionOther{
+    top:20%;
+    left:10%;
+    transform:none;
+    -ms-transform:none;
+    -webkit-transform:none;
+    border-top: solid 10px #7e5784;
+    border-left: none;
+  }
+  .textBlockBorderLeft.transitionData{
+    left:10%;
+    top:20%;
+    transform:none;
+    -ms-transform:none;
+    -webkit-transform:none;
+    border-top: solid 10px #7e5784;
+    border-left: none;
+  }
+  .workTitle h2,
+  .educationTitle h2,
+  .otherTitle h2,
+  .dataTitle h2{
+    color:#7e5784;
+    position: absolute;
+    top:150px;
+    left:-200px;
+    z-index: 2;
+    -webkit-transition:   left 3s 1s;
+    transition:   left 3s 1s;
+  }
+  .workTitle.transitionWork h2,
+  .educationTitle.transitionEducation h2,
+  .otherTitle.transitionOther h2,
+  .dataTitle.transitionData h2{
+    left: 10%;
+  }
+  .dataContent,
+  .educationContent,
+  .workContent,
+  .otherContent{
+    z-index:12;
+    height:100%;
+    left:25%;
+    top:30%;
+  }
+  .dataContent,
+  .educationContent{
+    width:80%;
+  }
+  .dataContent{
+    left:10%;
+  }
+  .workContent,
+  .otherContent{
+    z-index:11;
+  }
+  .dataContent.transition,
+  .educationContent.transition,
+  .workContent.transition,
+  .otherContent.transition{
+    opacity: 0;
+    -webkit-transition:   opacity 2s 0s;
+    transition:   opacity 2s 0s;
+    z-index: 6;
+  }
+  .dataContent.transitionData,
+  .educationContent.transitionEducation,
+  .workContent.transitionWork,
+  .otherContent.transitionOther{
+    opacity: 1;
+  }
+  .languageBlock{
+    width:150px;
+    height: 150px;
+    margin:20px;
+  }
+  .educationBlock{
+    width:50%;
+    display: block;
+    margin-bottom:50px;
+  }
+}

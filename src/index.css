@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100%;
+  height: 100%;
+  font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
+  background-color: #452c46;
+}
+p{
+  margin-bottom:20px;
+  color:#fff;
+}
+h1{
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size:24px;
+}
+h2{
+  color: #94a655;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size:16px;
+  margin-bottom:10px;
+}
+h3{
+  color: #94a655;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+h4{
+  color: #94a655;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 10px;
+}

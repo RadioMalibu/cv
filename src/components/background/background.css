@@ -1,0 +1,251 @@
+.Welcome{
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  opacity: 1;
+  -webkit-transition:   opacity 1s 2s;
+  transition:   opacity 1s 2s;
+}
+.Welcome.fadeOut{
+  opacity: 0;
+}
+.timer{
+  -webkit-animation:spin 2s linear infinite;
+  -moz-animation:spin 2s linear infinite;
+  animation:spin 2s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.backgroundTop{
+  width:100%;
+  height:70%;
+  position: absolute;
+  top:0;
+  background-image: linear-gradient(#452c46, #7e5784);
+  z-index:2;
+  -webkit-transition:   top 3s 1s;
+  transition:   top 3s 1s;
+}
+.backgroundBottom{
+  width:100%;
+  height:30%;
+  top:70%;
+  position: absolute;
+  background-color: #452c46;
+  z-index:1;
+  -webkit-transition:  height 3s 1s, top 3s 1s;
+  transition:   height 3s 1s, top 3s 1s;
+}
+.backgroundBottom.transitionEducation{
+  top:120%;
+}
+.backgroundTop.transitionEducation{
+  top:50%;
+}
+.backgroundBottom.transitionData{
+  top:20%;
+  height: 80%;
+}
+.backgroundTop.transitionData{
+  top:-50%;
+}
+.WorkBG{
+  width:100%;
+  height: 100%;
+  position: absolute;
+  bottom:30%;
+  left:-120%;
+  z-index:3;
+  -webkit-transition:   left 3s 1s, bottom 3s 1s;
+  transition:   left 3s 1s, bottom 3s 1s;
+}
+.WorkBG.transitionWork{
+  left:-5%;
+}
+.WorkBG.transitionEducation{
+  bottom:-20%;
+}
+.EducationBG{
+  background-color: #452c46;
+  position: absolute;
+  width: 100%;
+  height:50%;
+  top:-50%;
+  -webkit-transition:   left 3s 1s, top 3s 1s;
+  transition:   left 3s 1s, top 3s 1s;
+}
+.EducationBG.transitionEducation{
+  top:0;
+}
+.OtherBG{
+  width:100%;
+  height: 100%;
+  position: absolute;
+  bottom:30%;
+  left:120%;
+  z-index:3;
+  -webkit-transition:   left 3s 1s, bottom 3s 1s;
+  transition:   left 3s 1s, bottom 3s 1s;
+}
+.OtherBG.transitionOther{
+  left:-5%;
+}
+.OtherBG.transitionEducation{
+  bottom:-20%;
+}
+.BuildingOne{
+  width:300px;
+  height:200px;
+  background-color: #452c46;
+  position: relative;
+  top:calc(100% - 200px);
+  left:10%;
+  float:left;
+}
+.BuildingTwo{
+  width:150px;
+  height:350px;
+  background-color: #452c46;
+  position: relative;
+  top:calc(100% - 350px);
+  left:12%;
+  float:left;
+}
+.BuildingThree{
+  width:250px;
+  height:100px;
+  background-color: #452c46;
+  position: relative;
+  top:calc(100% - 100px);
+  left:20%;
+  float:left;
+}
+.BuildingFour{
+  width:150px;
+  height:250px;
+  background-color: #452c46;
+  position: relative;
+  top:calc(100% - 250px);
+  left:18%;
+  float:left;
+}
+.BuildingFive{
+  width:200px;
+  height:400px;
+  background-color: #452c46;
+  position: relative;
+  top:calc(100% - 400px);
+  left:20%;
+  float:left;
+}
+.BuildingSix{
+  width:250px;
+  height:125px;
+  background-color: #452c46;
+  position: relative;
+  top:calc(100% - 125px);
+  left:25%;
+  float:left;
+}
+.cloudOne{
+  width:200px;
+  height:150px;
+  top:20%;
+  left:15%;
+  position: absolute;
+}
+.cloudTwo{
+  width:150px;
+  height:100px;
+  top:40%;
+  left: 60%;
+  position: absolute;
+}
+.cloudThree{
+  width:250px;
+  height:200px;
+  top:15%;
+  left:80%;
+  position: absolute;
+}
+.cloud{
+  position: relative;
+  width:100%;
+  height:auto;
+  opacity: 0.6;
+}
+.pondWrap{
+  width:50%;
+  height: 100%;
+  position: relative;
+  left:50%;
+  bottom:-120%;
+  -webkit-transition:   bottom 3s 1s;
+  transition:   bottom 3s 1s;
+}
+.pondWrap img{
+  position: absolute;
+  bottom: 0;
+}
+.backgroundBottom.transitionData .pondWrap{
+  bottom:0;
+}
+.MountainOne{
+  width: 0;
+  height: 0;
+  border-left: 200px solid transparent;
+  border-bottom: 500px solid #452c46;
+  border-right:300px solid transparent;
+  position: absolute;
+  bottom: 0;
+  left:10%;
+  float:left;
+}
+.MountainTwo{
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-bottom: 300px solid #452c46;
+  border-right:200px solid transparent;
+  position: absolute;
+  bottom: 0;
+  left:30%;
+  float:left;
+}
+.MountainThree{
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-bottom: 250px solid #452c46;
+  border-right:100px solid transparent;
+  position: absolute;
+  bottom: 0;
+  left:65%;
+  float:left;
+}
+.MountainFour{
+  width: 0;
+  height: 0;
+  border-left: 300px solid transparent;
+  border-bottom: 600px solid #452c46;
+  border-right:350px solid transparent;
+  position: absolute;
+  bottom: 0;
+  left:70%;
+  float:left;
+}
+@media screen and (max-width: 800px){
+  .Welcome{
+    display: none;
+  }
+  .backgroundBottom.transitionData{
+    top:20%;
+    height: 80%;
+  }
+  .backgroundTop.transitionData{
+    top:-60%;
+  }
+}

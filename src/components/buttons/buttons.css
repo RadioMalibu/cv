@@ -1,0 +1,263 @@
+.buttonWrapper{
+  width:100%;
+  height:100%;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 10;
+}
+.button{
+  width: 100px;
+  height: 100px;
+  background-color: #94a655;
+  position: absolute;
+  cursor: pointer;
+}
+.educationButton{
+  top:10%;
+  left:35%;
+  -webkit-transition: left 3s 1s, top 3s 1s;
+  transition: left 3s 1s, top 3s 1s;
+}
+.workButton{
+  top:32.5%;
+  left: 5%;
+  -webkit-transition: left 3s 1s, top 3s 1s;
+  transition: left 3s 1s, top 3s 1s;
+}
+.otherButton{
+  top:55%;
+  left:90%;
+  -webkit-transition: left 3s 1s, top 3s 1s;
+  transition: left 3s 1s, top 3s 1s;
+}
+.dataButton{
+  top:80%;
+  left:60%;
+  -webkit-transition: left 3s 1s, top 3s 1s;
+  transition: left 3s 1s, top 3s 1s;
+}
+.workButton.workOpen,
+.educationButton.workOpen,
+.dataButton.workOpen{
+  left:90%;
+}
+.workButton.educationOpen,
+.educationButton.educationOpen,
+.otherButton.educationOpen{
+  top:80%;
+}
+.otherButton.otherOpen,
+.educationButton.otherOpen,
+.dataButton.otherOpen{
+  left:5%;
+}
+.workButton.dataOpen,
+.dataButton.dataOpen,
+.otherButton.dataOpen{
+  top:10%;
+}
+.workButtonText{
+  width:100px;
+  height:100px;
+  margin-left: 0px;
+  margin-top: 65px;
+  -webkit-transition:   margin-left 1s 0s;
+  transition:   margin-left 1s 0s;
+}
+.educationButtonText{
+  width:100px;
+  height:100px;
+  margin-left: 0px;
+  margin-top: 80px;
+  -webkit-transition:   margin-top 1s 0s;
+  transition:   margin-top 1s 0s;
+}
+.otherButtonText{
+  width:100px;
+  height:100px;
+  margin-left: 0px;
+  margin-top: 65px;
+  -webkit-transition:   margin-left 1s 0s;
+  transition:   margin-left 1s 0s;
+}
+.dataButtonText{
+  width:100px;
+  height:100px;
+  margin-left: 0px;
+  margin-top: 0px;
+  -webkit-transition:   margin-top 1s 0s;
+  transition:   margin-top 1s 0s;
+}
+.workButton:hover .workButtonText{
+  margin-left:110px;
+}
+.educationButton:hover .educationButtonText{
+  margin-top:110px;
+}
+.otherButton:hover .otherButtonText{
+  margin-left:-70px;
+}
+.dataButton:hover .dataButtonText{
+  margin-top: -30px;
+}
+.arrow-left {
+  width: 0;
+  height: 0;
+  margin-top:-10px;
+  top:50%;
+  margin-left:0px;
+  -webkit-transition:   margin-left 1s 0s;
+  transition:   margin-left 1s 0s;
+  position: absolute;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right:10px solid #94a655;
+}
+.arrow-up {
+  width: 0;
+  height: 0;
+  top:0px;
+  margin-left:-10px;
+  left:50%;
+  -webkit-transition:   top 1s 0s;
+  transition:   top 1s 0s;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid #94a655;
+  border-right:10px solid transparent;
+}
+.arrow-right {
+  width: 0;
+  height: 0;
+  margin-top:-10px;
+  top:50%;
+  margin-left:90px;
+  -webkit-transition:   margin-left 1s 0s;
+  transition:   margin-left 1s 0s;
+  position: absolute;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left:10px solid #94a655;
+}
+.arrow-down {
+  width: 0;
+  height: 0;
+  top:90px;
+  margin-left:-10px;
+  left:50%;
+  -webkit-transition:   top 1s 0s;
+  transition:   top 1s 0s;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-top: 10px solid #94a655;
+  border-right:10px solid transparent;
+}
+.workButton:hover .arrow-left{
+  margin-left:-20px;
+}
+.educationButton:hover .arrow-up{
+  top:-20px;
+}
+.otherButton:hover .arrow-right{
+  margin-left:110px;
+}
+.dataButton:hover .arrow-down{
+  top: 110px;
+}
+.portfolioButton{
+  width:0;
+  height:0;
+  border-left: 50px solid transparent;
+  border-bottom: 50px solid #94a655;
+  border-right:0px solid transparent;
+  position: absolute;
+  bottom:0;
+  right:0;
+  cursor: pointer;
+  -webkit-transition:   border-left 1s 0s, border-bottom 1s 0s;
+  transition:   border-left 1s 0s, border-bottom 1s 0s;
+}
+.portfolioButton:hover {
+  border-left: 100px solid transparent;
+  border-bottom: 100px solid #94a655;
+}
+@media screen and (max-width: 800px){
+  .buttonWrapper{
+    text-align: center;
+  }
+  .button{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+  }
+  .educationButton,
+  .educationButton.workOpen,
+  .educationButton.educationOpen,
+  .educationButton.otherOpen{
+    top:10px;
+    -webkit-transition: none;
+    transition: none;
+    left:35%;
+  }
+  .workButton,
+  .workButton.workOpen,
+  .workButton.educationOpen,
+  .workButton.dataOpen{
+    top:10px;
+    -webkit-transition: none;
+    transition: none;
+    left:5%;
+  }
+  .otherButton,
+  .otherButton.educationOpen,
+  .otherButton.otherOpen,
+  .otherButton.dataOpen{
+    top:10px;
+    -webkit-transition: none;
+    transition: none;
+    left:90%;
+  }
+  .dataButton,
+  .dataButton.workOpen,
+  .dataButton.otherOpen,
+  .dataButton.dataOpen{
+    top:10px;
+    -webkit-transition: none;
+    transition: none;
+    left:60%;
+  }
+  .workButtonText,
+  .educationButtonText,
+  .otherButtonText,
+  .dataButtonText{
+    width:100px;
+    height:50px;
+    margin-left: -25px;
+    margin-top: 50px;
+    -webkit-transition:   none;
+    transition:   none;
+  }
+  .workButton:hover .workButtonText,
+  .educationButton:hover .educationButtonText,
+  .otherButton:hover .otherButtonText,
+  .dataButton:hover .dataButtonText{
+    margin-left:-25px;
+    margin-top: 50px;
+  }
+  .arrow-left,
+  .arrow-up,
+  .arrow-right,
+  .arrow-down,
+  .workButton:hover .arrow-left,
+  .educationButton:hover .arrow-up,
+  .otherButton:hover .arrow-right,
+  .dataButton:hover .arrow-down{
+    display: none;
+  }
+  .portfolioButton{
+    position: absolute;
+    bottom:0;
+    right:0;
+  }
+}

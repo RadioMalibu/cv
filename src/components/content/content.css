@@ -13,7 +13,7 @@
   transition:   width 1s 0s, top 3s 1s, left 3s 1s, transform 3s 1s, border-left 3s 1s;
   z-index: 30;
 }
-.textBlockBorderLeft::-webkit-scrollbar { 
+::-webkit-scrollbar { 
     display: none; 
 }
 .textBlockBorderLeft p,

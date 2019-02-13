@@ -1,6 +1,5 @@
 .textBlockBorderLeft{
-  /*border-left: solid 10px #452c46;*/
-  border-left: solid 10px red;
+  border-left: solid 10px #452c46;
   width:0;
   height:35%;
   position: absolute;
